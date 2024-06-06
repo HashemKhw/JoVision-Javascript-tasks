@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+</head>
+
+<body>
+    <button onclick="divA()">button 1</button>
+    <button onclick="elmA()">button 2</button>
+    <button onclick="addA()">button 3</button>
+    <button onclick="prnA()">button 4</button>
+    <button onclick="shlA()">button 5</button>
+
+    <script>
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                let j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        function divA() {
+            let numA = [];
+            for (let i = 0; i < 100; i++) {
+
+                numA[i] = i;
+
+                if (numA[i] % 3 == 0) {
+                    console.log(numA[i]);
+                    numA.splice(i, 1);
+                }
+            }
+        }
+
+        function elmA() {
+            let numA = [];
+            for (let i = 0; i < 100; i++) {
+
+                numA[i] = i;
+
+            }
+            for (let i = 100; i <= 150; i++) {
+                numA.push(i);
+                console.log(numA[i]);
+            }
+        }
+
+        function addA() {
+            let numA = [];
+            for (let i = 0; i < 100; i++) {
+
+                numA[i] = i;
+
+            }
+            for (let i = 0; i < 100; i++) {
+                numA[i] += 3;
+                console.log(numA[i]);
+            }
+        }
+
+        function prnA() {
+            let numA = [];
+            for (let i = 0; i < 100; i++) {
+
+                numA[i] = i;
+
+            }
+            for (let i = 20; i <= 40; i++) {
+                console.log(numA[i]);
+            }
+        }
+
+        function shlA() {
+            let numA = [];
+            for (let i = 0; i < 100; i++) {
+
+                numA[i] = i;
+
+            }
+            shuffleArray(numA);
+            for (let i = 0; i < 100; i++) {
+
+                console.log(numA[i]);
+
+            }
+            numA.sort(function(a, b) {
+                return b - a
+            });
+            for (let i = 0; i < 100; i++) {
+
+                console.log(numA[i]);
+
+            }
+        }
+    </script>
+</body>
+
+</html>

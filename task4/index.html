@@ -8,22 +8,22 @@
 </head>
 
 <body>
-    <button onclick="sumA()">Click</button>
+    <button onclick="divA()">click me</button>
+
     <script>
-        function sumA() {
-            var sum = 0;
-            const numA = new Array(100);;
+        function divA() {
+            let sum = 0;
+            let numA = [];
             for (let i = 0; i < 100; i++) {
 
                 numA[i] = i;
 
-                if (numA[i] % 2 == 0) sum += i;
+                sum += numA[i];
 
             }
-            console.log(sum)
+            console.log(sum);
         }
     </script>
-    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+</head>
+
+<body>
+    <button onclick="sumA()">Click</button>
+    <script>
+        function sumA() {
+            var sum = 0;
+            const numA = new Array(100);;
+            for (let i = 0; i < 100; i++) {
+
+                numA[i] = i;
+
+                if (numA[i] % 2 == 0) sum += i;
+
+            }
+            console.log(sum)
+        }
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

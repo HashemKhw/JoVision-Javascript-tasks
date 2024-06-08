@@ -3,7 +3,7 @@ function getIp() {
     ip.then(res =>
             res.json()).then(d => {
 
-            document.getElementById("button1").innerText = JSON.stringify(d);
+            document.getElementById("button1").innerText = d.ip;
 
-        }) //.catch(err => console.error('Error fetching IP:', err));
+        }) 
 }
